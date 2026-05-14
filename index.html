@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NORD CLEAN — Химчистка и стирка с доставкой по Санкт-Петербургу</title>
+  <meta name="description" content="NORD CLEAN — профессиональная химчистка, стирка и уход за одеждой, обувью и текстилем с доставкой по Санкт-Петербургу. Заберём, обработаем и вернём в удобное время." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Mulish:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">NORD<span> CLEAN</span></a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#about">О нас</a></li>
+    <li><a href="#services">Услуги</a></li>
+    <li><a href="#process">Как работаем</a></li>
+    <li><a href="#advantages">Преимущества</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#contacts">Контакты</a></li>
+    <li><a href="#" class="nav-cta" onclick="openModal(); return false;">Оставить заявку</a></li>
+  </ul>
+  <button class="burger" id="burger" aria-label="Меню">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-content">
+    <div class="hero-badge">
+      <svg class="icon icon-sm" viewBox="0 0 24 24"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+      Профессиональный уход · СПб
+    </div>
+    <h1>Химчистка и уход<br>за вещами <em>с доставкой</em></h1>
+    <p class="hero-sub">Заберём, аккуратно обработаем и вернём ваши вещи в удобное время</p>
+    <p class="hero-desc">
+      NORD CLEAN — сервис для тех, кто хочет поддерживать одежду, обувь и домашний текстиль в хорошем состоянии, не тратя время на поездки и очереди. Мы берём на себя полный процесс.
+    </p>
+    <div class="hero-btns">
+      <button class="btn-primary" onclick="openModal()">
+        <svg class="icon icon-sm" viewBox="0 0 24 24"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+        Оставить заявку
+      </button>
+      <a href="#services" class="btn-outline">Наши услуги</a>
+    </div>
+    <p class="hero-note">Менеджер свяжется с вами для уточнения состава заказа и удобного времени доставки.</p>
+    <div class="hero-tags">
+      <span class="hero-tag">
+        <svg class="icon icon-sm" viewBox="0 0 24 24"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg>
+        Одежда
+      </span>
+      <span class="hero-tag">
+        <svg class="icon icon-sm" viewBox="0 0 24 24"><path d="M3 11h2l1-5h12l1 5h2"/><path d="M5 11v8a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1h8v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-8"/><path d="M3 11h18"/></svg>
+        Обувь
+      </span>
+      <span class="hero-tag">
+        <svg class="icon icon-sm" viewBox="0 0 24 24"><path d="M3 7v4a1 1 0 0 0 1 1h3"/><path d="M7 7v10"/><path d="M21 7v4a1 1 0 0 1-1 1h-3"/><path d="M17 7v10"/><path d="M7 17h10"/><path d="M7 7h10"/><rect x="10" y="3" width="4" height="4" rx="1"/></svg>
+        Текстиль
+      </span>
+      <span class="hero-tag">
+        <svg class="icon icon-sm" viewBox="0 0 24 24"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg>
+        Корпоративный
+      </span>
+      <span class="hero-tag">
+        <svg class="icon icon-sm" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        Срочный заказ
+      </span>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-deco-wrap">
+      <div class="hero-deco-orb"></div>
+      <svg class="hero-deco-svg" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="100" r="80" stroke="rgba(200,123,69,0.2)" stroke-width="1.5" stroke-dasharray="8 6" class="spin-slow"/>
+        <circle cx="100" cy="100" r="55" stroke="rgba(200,123,69,0.12)" stroke-width="1" stroke-dasharray="4 8" class="spin-reverse"/>
+        <path d="M100 30 L106 50 L100 46 L94 50Z" fill="rgba(200,123,69,0.5)" class="float-icon"/>
+        <path d="M150 80 C155 75, 162 78, 160 85 C158 92, 150 95, 148 88 C146 81, 145 85, 150 80Z" fill="rgba(200,123,69,0.3)" class="float-icon-delay"/>
+        <circle cx="60" cy="140" r="6" fill="rgba(200,123,69,0.25)" class="pulse-circle"/>
+        <circle cx="145" cy="135" r="4" fill="rgba(200,123,69,0.2)" class="pulse-circle-delay"/>
+        <!-- Hanger icon in center -->
+        <g transform="translate(75, 75)" stroke="rgba(200,123,69,0.6)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M25 8 C25 4, 22 2, 19 2 C16 2, 14 4, 14 6"/>
+          <path d="M3 22 L25 10 L47 22"/>
+          <line x1="3" y1="22" x2="47" y2="22"/>
+          <path d="M8 22 L8 40 L42 40 L42 22"/>
+          <line x1="18" y1="30" x2="32" y2="30"/>
+        </g>
+      </svg>
+    </div>
+    <div class="hero-card">
+      <div class="hero-card-icon">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m7.5 12.5 3 3 6-6"/></svg>
+      </div>
+      <h3>Деликатный уход</h3>
+      <p>Индивидуальный подбор метода обработки для каждой вещи</p>
+    </div>
+    <div class="hero-card">
+      <div class="hero-card-icon">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></svg>
+      </div>
+      <h3>Курьерская доставка</h3>
+      <p>Забираем и возвращаем в согласованное время по Санкт-Петербургу</p>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-card">
+        <span class="stat-num">2000+</span>
+        <span class="stat-label">вещей обработано<br>за последний год</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">100%</span>
+        <span class="stat-label">индивидуальный<br>подход к вещам</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <span class="section-label">О компании</span>
+  <h2>NORD CLEAN — уход за вещами<br>без лишних хлопот</h2>
+  <p class="section-sub">Профессиональная химчистка, стирка и доставка в одном сервисе</p>
+
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p>NORD CLEAN помогает клиентам экономить время и поддерживать вещи в аккуратном состоянии. Мы организуем полный цикл работы: принимаем заявку, уточняем состав заказа, забираем вещи, подбираем подходящий способ обработки и возвращаем заказ в согласованное время.</p>
+      <p>Каждый заказ рассматривается индивидуально. Мы учитываем тип ткани, цвет, степень загрязнения, рекомендации производителя, состояние фурнитуры и пожелания клиента. Такой подход особенно важен для деликатных материалов, верхней одежды и дорогих изделий.</p>
+      <p>Наша задача — не просто очистить вещь, а сохранить её внешний вид, форму и комфорт использования. Поэтому мы честно объясняем, какой результат можно получить с учётом состояния изделия.</p>
+    </div>
+    <div class="about-pillars reveal reveal-delay-2">
+      <div class="pillar">
+        <div class="pillar-icon">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"/></svg>
+        </div>
+        <strong>Полный цикл</strong>
+        <span>Приём заявки, уточнение, забор, обработка, возврат — всё в одном сервисе</span>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">
+          <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+        </div>
+        <strong>Индивидуальный подход</strong>
+        <span>Подходящий метод для каждого изделия с учётом ткани и состояния</span>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+        </div>
+        <strong>Понятная коммуникация</strong>
+        <span>Клиент знает, что происходит с заказом на каждом этапе</span>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">
+          <svg class="icon" viewBox="0 0 24 24"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg>
+        </div>
+        <strong>Аккуратная упаковка</strong>
+        <span>Вещи бережно упаковываются и возвращаются в идеальном виде</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="services-header">
+    <div>
+      <span class="section-label">Услуги</span>
+      <h2>Уход за вещами<br>под разные задачи</h2>
+      <p class="section-sub services-intro">От повседневной стирки до деликатной химчистки сложных изделий</p>
+    </div>
+    <div class="services-deco">
+      <svg width="140" height="140" viewBox="0 0 140 140" fill="none">
+        <circle cx="70" cy="70" r="60" stroke="rgba(200,123,69,0.15)" stroke-width="1" stroke-dasharray="6 4" class="spin-slow"/>
+        <circle cx="70" cy="70" r="40" stroke="rgba(200,123,69,0.1)" stroke-width="1" stroke-dasharray="3 6" class="spin-reverse"/>
+        <g transform="translate(45, 45)" stroke="rgba(200,123,69,0.5)" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M25 5 C25 2, 22 0, 19 0 C16 0, 14 2, 14 4"/>
+          <path d="M0 18 L25 8 L50 18"/>
+          <line x1="0" y1="18" x2="50" y2="18"/>
+        </g>
+        <circle cx="30" cy="110" r="4" fill="rgba(200,123,69,0.2)" class="pulse-circle"/>
+        <circle cx="115" cy="30" r="3" fill="rgba(200,123,69,0.15)" class="pulse-circle-delay"/>
+      </svg>
+    </div>
+  </div>
+
+  <div class="services-grid">
+    <div class="service-card service-card--rose reveal">
+      <div class="service-icon">
+        <svg class="icon icon-lg" viewBox="0 0 24 24"><path d="M6 2v6"/><path d="M18 2v6"/><path d="M12 2v2"/><path d="M4.93 10.93 2 18l6-2.93"/><path d="M2 18l1.18-6.18a4 4 0 0 1 2.28-2.92L8 7.5"/><path d="m19.07 10.93 2.93 7.07-6-2.93"/><path d="M22 18l-1.18-6.18a4 4 0 0 0-2.28-2.92L16 7.5"/><path d="M12 4a2 2 0 0 1 2 2v1H10V6a2 2 0 0 1 2-2Z"/><path d="M10 7h4v1a5 5 0 0 1-4 0V7Z"/></svg>
+      </div>
+      <h3>Химчистка одежды</h3>
+      <p>Пальто, куртки, пуховики, костюмы, платья, жакеты, брюки. Перед обработкой оцениваем материал, загрязнения, состояние подкладки и фурнитуры.</p>
+    </div>
+    <div class="service-card service-card--amber reveal reveal-delay-1">
+      <div class="service-icon">
+        <svg class="icon icon-lg" viewBox="0 0 24 24"><path d="M3 6h3"/><path d="M17 6h.01"/><rect width="18" height="20" x="3" y="2" rx="2"/><circle cx="12" cy="13" r="5"/><path d="M12 18a2.5 2.5 0 0 0 0-5 2.5 2.5 0 0 1 0-5"/></svg>
+      </div>
+      <h3>Стирка и глажка</h3>
+      <p>Повседневная одежда, рубашки, постельное бельё, полотенца и домашний текстиль. Идеально для семей и занятых клиентов — чистые и аккуратно сложенные вещи без самостоятельной сортировки.</p>
+    </div>
+    <div class="service-card service-card--teal reveal reveal-delay-2">
+      <div class="service-icon">
+        <svg class="icon icon-lg" viewBox="0 0 24 24"><path d="M3 11h2l1-5h12l1 5h2"/><path d="M5 11v8a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1h8v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-8"/><path d="M3 11h18"/></svg>
+      </div>
+      <h3>Уход за обувью</h3>
+      <p>Чистка, обработка поверхности, восстановление аккуратного внешнего вида и базовая подготовка к сезону. Работаем с повседневной обувью и деликатными изделиями.</p>
+    </div>
+    <div class="service-card service-card--plum reveal reveal-delay-1">
+      <div class="service-icon">
+        <svg class="icon icon-lg" viewBox="0 0 24 24"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg>
+      </div>
+      <h3>Корпоративные заказы</h3>
+      <p>Для салонов, студий, шоурумов, офисов и небольших компаний. Регулярный уход за текстилем, формой, образцами одежды или вещами после мероприятий и съёмок.</p>
+    </div>
+    <div class="service-card service-card--sage reveal reveal-delay-2">
+      <div class="service-icon">
+        <svg class="icon icon-lg" viewBox="0 0 24 24"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></svg>
+      </div>
+      <h3>Курьерская доставка</h3>
+      <p>Курьер забирает вещи по согласованному адресу и возвращает заказ после обработки. Не нужно самостоятельно отвозить вещи и подстраиваться под график пункта приёма.</p>
+    </div>
+    <div class="service-card service-card--gold reveal reveal-delay-3">
+      <div class="service-icon">
+        <svg class="icon icon-lg" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+      </div>
+      <h3>Срочная обработка</h3>
+      <p>Подготовка вещей к важным событиям: свадьбам, фотосессиям, деловым встречам. Обсудим сроки и формат при оформлении заявки.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <span class="section-label">Как работаем</span>
+  <h2>Простой процесс<br>от заявки до возврата</h2>
+  <p class="section-sub">Понятная схема работы, чтобы вы знали, что происходит с заказом</p>
+
+  <div class="steps-container">
+    <div class="step reveal">
+      <div class="step-num">1</div>
+      <h3>Заявка</h3>
+      <p>Оставляете имя, телефон и тип услуги. Можно добавить комментарий: состав заказа, адрес, особенности вещей.</p>
+    </div>
+    <div class="step reveal reveal-delay-1">
+      <div class="step-num">2</div>
+      <h3>Уточнение деталей</h3>
+      <p>Менеджер связывается с вами, уточняет состав заказа и помогает выбрать подходящий формат услуги.</p>
+    </div>
+    <div class="step reveal reveal-delay-2">
+      <div class="step-num">3</div>
+      <h3>Забор вещей</h3>
+      <p>Курьер приезжает по согласованному адресу в удобное время. Ехать в пункт приёма не нужно.</p>
+    </div>
+    <div class="step reveal reveal-delay-3">
+      <div class="step-num">4</div>
+      <h3>Обработка</h3>
+      <p>Специалисты оценивают изделия и проводят обработку: химчистка, стирка, глажка, чистка обуви или комплексный уход.</p>
+    </div>
+    <div class="step reveal reveal-delay-4">
+      <div class="step-num">5</div>
+      <h3>Возврат заказа</h3>
+      <p>Готовые вещи аккуратно упаковываются и возвращаются в согласованное время. Получите комментарий по особенностям заказа.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ADVANTAGES -->
+<section id="advantages">
+  <span class="section-label">Преимущества</span>
+  <h2>Почему клиенты<br>выбирают NORD CLEAN</h2>
+  <p class="section-sub">Удобство доставки, аккуратный подход и понятная коммуникация</p>
+
+  <div class="adv-layout">
+    <div class="adv-text reveal">
+      <p>Вы можете оставить заявку онлайн, согласовать время забора и получить готовый заказ без поездок по городу. Это особенно важно для занятых людей, семей с плотным графиком и клиентов, которым нужно регулярно ухаживать за большим количеством вещей.</p>
+      <p>Мы внимательно относимся к составу каждого заказа — важно учитывать особенности материала, тип изделия, загрязнения и ожидаемый результат. Такой подход помогает избежать лишних рисков и сделать обслуживание предсказуемым.</p>
+      <ul class="adv-list">
+        <li>
+          <span class="adv-check"><svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+          Доставка по всему Санкт-Петербургу
+        </li>
+        <li>
+          <span class="adv-check"><svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+          Индивидуальный подход к каждому заказу
+        </li>
+        <li>
+          <span class="adv-check"><svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+          Работа с деликатными материалами
+        </li>
+        <li>
+          <span class="adv-check"><svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+          Аккуратная упаковка после обработки
+        </li>
+        <li>
+          <span class="adv-check"><svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+          Возможность регулярного обслуживания
+        </li>
+        <li>
+          <span class="adv-check"><svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+          Понятная коммуникация на всех этапах
+        </li>
+      </ul>
+    </div>
+    <div class="adv-cards reveal reveal-delay-2">
+      <div class="adv-card adv-card--amber">
+        <div class="adv-card-icon">
+          <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h4>Экономия времени</h4>
+        <p>Не нужно ехать в химчистку и подстраиваться под чужой график</p>
+      </div>
+      <div class="adv-card adv-card--teal">
+        <div class="adv-card-icon">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"/></svg>
+        </div>
+        <h4>Профессиональный уход</h4>
+        <p>Правильный метод обработки для каждого типа ткани и загрязнения</p>
+      </div>
+      <div class="adv-card adv-card--rose">
+        <div class="adv-card-icon">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+        </div>
+        <h4>Прозрачный статус</h4>
+        <p>Вы знаете, что происходит с вещами на каждом этапе обработки</p>
+      </div>
+      <div class="adv-card adv-card--sage">
+        <div class="adv-card-icon">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"/></svg>
+        </div>
+        <h4>Регулярный сервис</h4>
+        <p>Удобный формат для постоянного ухода за гардеробом семьи или офиса</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AUDIENCE -->
+<section id="audience">
+  <span class="section-label">Кому подойдёт</span>
+  <h2>Наш сервис подходит<br>разным клиентам</h2>
+  <p class="section-sub">Для частных лиц, семей, деловых людей и небольших компаний</p>
+
+  <div class="audience-grid">
+    <div class="audience-card reveal">
+      <div class="audience-icon audience-icon--amber">
+        <svg class="icon icon-lg" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      </div>
+      <h3>Частные клиенты</h3>
+      <p>Сезонная химчистка пальто, подготовка вещей к поездке, уход за деликатным платьем, чистка пуховика или регулярная стирка.</p>
+    </div>
+    <div class="audience-card reveal reveal-delay-1">
+      <div class="audience-icon audience-icon--rose">
+        <svg class="icon icon-lg" viewBox="0 0 24 24"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      </div>
+      <h3>Семьи</h3>
+      <p>Постельное бельё, полотенца, детские вещи, верхняя одежда, пледы. Доставка позволяет передать часть бытовых задач сервису.</p>
+    </div>
+    <div class="audience-card reveal reveal-delay-2">
+      <div class="audience-icon audience-icon--teal">
+        <svg class="icon icon-lg" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+      </div>
+      <h3>Деловые клиенты</h3>
+      <p>Костюмы, рубашки, пальто, жакеты — регулярный уход для тех, кто часто ездит на встречи или работает в офисной среде.</p>
+    </div>
+    <div class="audience-card reveal reveal-delay-3">
+      <div class="audience-icon audience-icon--plum">
+        <svg class="icon icon-lg" viewBox="0 0 24 24"><path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9Z"/><path d="m3 9 2.45-4.9A2 2 0 0 1 7.24 3h9.52a2 2 0 0 1 1.8 1.1L21 9"/><path d="M12 3v6"/></svg>
+      </div>
+      <h3>Малый бизнес</h3>
+      <p>Салоны, шоурумы, фотостудии, офисы — образцы одежды, текстиль после съёмок, рабочие комплекты.</p>
+    </div>
+  </div>
+  <div class="audience-extra reveal">
+    <p>Сервис будет особенно полезен <strong>перед важными событиями</strong>: свадьбами, фотосессиями, деловыми мероприятиями, переездами, сезонной сменой гардероба или подготовкой вещей к хранению.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <span class="section-label">Вопросы и ответы</span>
+  <h2>Часто задаваемые<br>вопросы</h2>
+  <p class="section-sub">Ответы на самые популярные вопросы о сервисе</p>
+
+  <div class="faq-grid">
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        По каким районам работает доставка?
+        <span class="arrow"><svg class="icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+      </button>
+      <div class="faq-a">
+        <p>Мы работаем по всему Санкт-Петербургу. Время забора и возврата вещей согласуется индивидуально с менеджером при оформлении заявки.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Сколько времени занимает химчистка?
+        <span class="arrow"><svg class="icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+      </button>
+      <div class="faq-a">
+        <p>Сроки зависят от типа вещи и вида обработки. Менеджер уточнит сроки при согласовании заказа. Для срочных случаев возможно ускоренное обслуживание — обсудите при заявке.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Что если вещь нельзя восстановить?
+        <span class="arrow"><svg class="icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+      </button>
+      <div class="faq-a">
+        <p>Мы честно объясняем, какой результат можно получить с учётом состояния изделия. Если обработка может повредить вещи, предупредим об этом заранее.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Работаете ли вы с деликатными тканями?
+        <span class="arrow"><svg class="icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+      </button>
+      <div class="faq-a">
+        <p>Да, мы специализируемся на деликатных материалах: шёлк, кашемир, кожа, замша и другие. Для каждого изделия подбирается индивидуальный метод обработки.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Возможно ли регулярное обслуживание?
+        <span class="arrow"><svg class="icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+      </button>
+      <div class="faq-a">
+        <p>Конечно. Формат регулярного обслуживания особенно удобен для семей, занятых специалистов и небольших компаний. Условия обсуждаются индивидуально.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Как оплатить заказ?
+        <span class="arrow"><svg class="icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+      </button>
+      <div class="faq-a">
+        <p>Детали оплаты согласовываются с менеджером при уточнении заказа. Свяжитесь с нами по телефону или оставьте заявку на сайте — мы расскажем о доступных способах.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section id="cta-banner">
+  <div class="cta-deco" aria-hidden="true">
+    <svg width="300" height="300" viewBox="0 0 300 300" fill="none">
+      <circle cx="150" cy="150" r="120" stroke="rgba(255,255,255,0.06)" stroke-width="1" stroke-dasharray="8 6" class="spin-slow"/>
+      <circle cx="150" cy="150" r="80" stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="4 8" class="spin-reverse"/>
+      <circle cx="60" cy="220" r="5" fill="rgba(255,255,255,0.06)" class="pulse-circle"/>
+      <circle cx="240" cy="80" r="4" fill="rgba(255,255,255,0.05)" class="pulse-circle-delay"/>
+    </svg>
+  </div>
+  <h2>Готовы отдать вещи<br>в надёжные руки?</h2>
+  <p>Оставьте заявку — менеджер свяжется с вами и поможет оформить заказ</p>
+  <button class="btn-light" onclick="openModal()">
+    <svg class="icon icon-sm" viewBox="0 0 24 24"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+    Оставить заявку
+  </button>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts">
+  <span class="section-label">Контакты</span>
+  <h2>Свяжитесь с нами</h2>
+  <p class="section-sub">Мы на связи ежедневно и готовы ответить на вопросы</p>
+
+  <div class="contacts-grid">
+    <div class="contact-intro reveal">
+      <p>Если вы хотите уточнить возможность обработки конкретной вещи, сроки, доставку или регулярное обслуживание, свяжитесь с NORD CLEAN по телефону или email. Также можно оставить заявку на сайте — менеджер сам перезвонит.</p>
+      <p>Сервис работает по Санкт-Петербургу. Время забора и возврата вещей согласуется индивидуально. Для больших заказов, корпоративного обслуживания или регулярной обработки условия можно обсудить отдельно.</p>
+      <div class="contact-note">
+        <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Принимаем заявки и звонки ежедневно с 9:00 до 21:00
+      </div>
+    </div>
+    <div class="contact-cards reveal reveal-delay-2">
+      <a href="tel:+79991234567" class="contact-card">
+        <div class="contact-card-icon">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <div>
+          <strong>Телефон</strong>
+          <span>+7 999 123-45-67</span>
+        </div>
+      </a>
+      <a href="mailto:hello@nordclean.ru" class="contact-card">
+        <div class="contact-card-icon">
+          <svg class="icon" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </div>
+        <div>
+          <strong>Email</strong>
+          <span>hello@nordclean.ru</span>
+        </div>
+      </a>
+      <div class="contact-card">
+        <div class="contact-card-icon">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div>
+          <strong>Город</strong>
+          <span>Санкт-Петербург</span>
+        </div>
+      </div>
+      <div class="contact-card" style="cursor:pointer;" onclick="openModal()">
+        <div class="contact-card-icon">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+        </div>
+        <div>
+          <strong>Заявка онлайн</strong>
+          <span>Оставить заявку →</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">NORD<span> CLEAN</span></div>
+  <div>Санкт-Петербург · hello@nordclean.ru · +7 999 123-45-67</div>
+  <div>© 2025 NORD CLEAN. Компания является вымышленной.</div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal" onclick="closeModalOutside(event)">
+  <div class="modal" role="dialog" aria-modal="true" aria-label="Форма заявки">
+    <button class="modal-close" onclick="closeModal()" aria-label="Закрыть">
+      <svg class="icon" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <span class="modal-badge">
+      <svg class="icon icon-sm" viewBox="0 0 24 24"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+      Оставить заявку
+    </span>
+    <h2>Оставьте заявку<br>на химчистку</h2>
+    <p class="modal-sub">Мы уточним состав заказа, сроки и удобное время доставки</p>
+
+    <div class="form-group">
+      <label for="f-name">Ваше имя</label>
+      <input type="text" id="f-name" placeholder="Например: Анна" />
+    </div>
+    <div class="form-group">
+      <label for="f-phone">Телефон</label>
+      <input type="tel" id="f-phone" placeholder="+7 (___) ___-__-__" />
+    </div>
+    <div class="form-group">
+      <label for="f-service">Тип услуги</label>
+      <select id="f-service">
+        <option value="" disabled selected>Выберите услугу</option>
+        <option>Химчистка одежды</option>
+        <option>Стирка и глажка</option>
+        <option>Уход за обувью</option>
+        <option>Корпоративный заказ</option>
+        <option>Срочная обработка</option>
+        <option>Не знаю — помогите выбрать</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="f-comment">Комментарий (необязательно)</label>
+      <textarea id="f-comment" placeholder="Опишите состав заказа, удобное время или особенности вещей..."></textarea>
+    </div>
+    <button class="btn-primary" onclick="submitForm()">Отправить заявку →</button>
+    <p class="modal-legal">Нажимая кнопку, вы соглашаетесь на обработку персональных данных</p>
+  </div>
+</div>
+
+<script>
+  // Nav scroll effect
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 30);
+  });
+
+  // Burger menu
+  const burger = document.getElementById('burger');
+  const navLinks = document.getElementById('nav-links');
+  burger.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+  });
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => navLinks.classList.remove('open'));
+  });
+
+  // Reveal on scroll
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el => observer.observe(el));
+
+  // Модальное окно с заявкой
+  function openModal() {
+    document.getElementById('modal').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal() {
+    document.getElementById('modal').classList.remove('active');
+    document.body.style.overflow = '';
+  }
+  function closeModalOutside(e) {
+    if (e.target === document.getElementById('modal')) closeModal();
+  }
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+  // Форматирование телефона
+  const phoneInput = document.getElementById('f-phone');
+  phoneInput.addEventListener('input', (e) => {
+    let v = e.target.value.replace(/\D/g, '');
+    if (v.startsWith('8')) v = '7' + v.slice(1);
+    if (!v.startsWith('7')) v = '7' + v;
+    v = v.slice(0, 11);
+    let out = '+7';
+    if (v.length > 1) out += ' (' + v.slice(1, 4);
+    if (v.length >= 4) out += ') ' + v.slice(4, 7);
+    if (v.length >= 7) out += '-' + v.slice(7, 9);
+    if (v.length >= 9) out += '-' + v.slice(9, 11);
+    e.target.value = out;
+  });
+
+  // FAQ-секция
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+
+  // Форма заявки
+  function submitForm() {
+    const name = document.getElementById('f-name').value.trim();
+    const phone = document.getElementById('f-phone').value.trim();
+    if (!name || phone.length < 5) {
+      alert('Пожалуйста, заполните имя и телефон');
+      return;
+    }
+    closeModal();
+    setTimeout(() => alert('Спасибо, ' + name + '! Менеджер свяжется с вами в ближайшее время.'), 300);
+  }
+</script>
+</body>
+</html>
